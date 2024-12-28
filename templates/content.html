@@ -1,0 +1,390 @@
+{% extends "base.html" %}
+{% load static %}
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>副木民眾版</title>
+    <style>
+      
+      .img{
+            background-size: contain;
+            max-width:100%;
+            height: auto;
+            object-fit: cover;
+            flex: 1;
+          }
+      
+    </style>
+       
+  </head>
+  <body>
+  
+  {% block content %}
+  {% include 'header1.html' %}
+  <div class="container">
+    <div class="row">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'img/view.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/venice.png' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/banner1.png' %}" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<main class="container"> 
+<section id='second'>
+  <div class="container">
+    <div class='row'>
+    <div class='col-md-8 offset-md-2 text-center'>
+      <h3>加入學習平台，一起去認識副木</h3>
+      <div class='row'>
+        <div class='col-md-4 text-center'>
+          {% load static %}
+          <img src="{% static 'img/self.jpg' %}">
+          <h5>搞手Rehand</h5>
+        </div>
+        <div class='col-md-8 text-left'>
+          <p class='lead'>副木製作是職能治療重要的臨床業務之一！</p>
+          <p>副木製作是職能治療專業範圍之一,治療師透過繪製紙型,選擇熱塑性材料,繪製,加熱,裁剪材料,塑型,修整邊緣等步驟,根據每位患者個別化的需求,量身客製而成</p>
+          <p>本學習平台講授示範及指導動態副木的製作要點，適合生理職能治療的臨床工作者及醫師，尤其對平時較少有機會接觸動態副木製作的一般民眾是難得的學習機會！</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <hr>
+  <!--################################################第一篇######################################################-->
+    <!--教學文章加上圖片-->  
+  <div class="container">
+    <div class="row">
+        <h3 class="display-5 link-body-emphasis mb-1">腕隧道症候群</h3>   
+    </div>
+  </div>
+   <div class="content">
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://i.imgur.com/8mMBc44.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">腕隧道症候群是最常見的上肢神
+                  經壓迫問題，是因為正中神經在
+                  手腕處受到壓迫所引起的</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://i.imgur.com/69PLnDN.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">常發生於40~60歲的女性，且通常
+                  會影響到雙側手。典型的抱怨為手
+                  麻，特別是在晚上或開車的時候，
+                  且會伴隨疼痛、皮膚感覺異常(大拇
+                  指到無名指橈側的腹面)、動作會變
+                  笨拙或是無力</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       <!--row2-->
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://i.imgur.com/UP7y29a.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">腕隧道症候群造成的原因可
+                  能與重複性的使用或是屈肌
+                  腱鞘發炎有關，而導致肌腱
+                  與神經之間的摩擦力增加</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="https://i.imgur.com/PfKTyzK.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <p class="card-title">一般治療</p>
+              <p class="card-text">
+                (1)注射類固醇，給予止痛藥物。
+                (2)在夜間穿戴豎腕(cock-up)副木讓手腕
+                維持在正中位置，來減少對腕隧道的
+                壓迫，需穿戴3到4周的時間。</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+     <!--row3-->
+     <div class="row">
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="https://i.imgur.com/EUZpiF8.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <p class="card-title">注意手部的姿勢</p>
+              <p class="card-text">避免長時間做過度用力的握拳動
+                作或持續捏住東西</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-3" style="max-width: 640px;">
+      <div class="row g-0">
+        <div class="col-md-12">
+          <img src="https://i.imgur.com/hBaICVZ.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+      <!--row4-->
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-12">
+              <img src="https://i.imgur.com/97DvWAV.png" class="img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-12">
+            <img src="https://i.imgur.com/rwX3RtC.png" class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>   
+  <hr>
+ <!--################################################第二篇######################################################-->
+    <!--教學文章加上圖片-->  
+    <div class="container">
+    <div class="row">
+        <h3 class="display-5 link-body-emphasis mb-1">板機指</h3>   
+    </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://i.imgur.com/tuB7ZO5.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">板機指 >>> 
+                  因為屈曲肌腱的腱鞘變厚或
+                  是因為肌腱本身腫脹而引起，
+                  會使得手指屈曲後不能伸直</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://i.imgur.com/GZguKgf.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">板機指 >>> 
+                  最常發生於屈指淺肌通過AI
+                  滑車處，有時還會摸到結節。</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--row2-->
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://i.imgur.com/s5fK1Jv.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">一般治療:</p>
+                  (1)注射類固醇，給予止痛藥物。
+                  (2)穿戴手指副木，將受到影響的關節固定
+                  起來，讓肌腱藉由休息來恢復原有的滑
+                  動度。</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="https://i.imgur.com/7FM85no.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <p class="card-title">減少使用手指
+                的力量</p>
+              <p class="card-text">
+                避免長時間做過度用力的握拳動
+                作或持續捏住東西</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+      <!--row3-->
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-12">
+              <img src="https://i.imgur.com/rKgTMy7.png" class="img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-12">
+            <img src="https://i.imgur.com/rwX3RtC.png" class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>   
+    <hr>
+<!--################################################第三篇######################################################-->
+   <!--教學文章加上圖片-->  
+   <div class="container">
+    <div class="row">
+        <h3 class="display-5 link-body-emphasis mb-1">媽媽手</h3>   
+    </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-12">
+              <img src="https://i.imgur.com/d6HYgQB.png" class="img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://i.imgur.com/PfKTyzK.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">媽媽手</p>
+                  可能是因為外展拇長肌和
+                  伸拇短肌的過度動作造成
+                  肌腱腫大或是腔室腫脹造成的</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--row2-->
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://i.imgur.com/JOMecrH.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">最好整天穿戴，如果會影響生活作息時，則
+                  盡量利用休息和睡覺的時間穿戴，有穿戴時
+                  就可以減緩症狀；如果狀況仍然不能改善或
+                  是更嚴重時，就會注射皮質類固醇藥物，並
+                  建議繼續穿戴副木。</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="https://i.imgur.com/agSxdcv.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <p class="card-title">注意事項</p>
+              <p class="card-text">
+                調整一些工作習慣
+                使用器具的不正確方式
+                不然還是會復發</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+      <!--row3-->
+      <div class="row">
+        <div class="card mb-3" style="max-width: 640px;">
+          <div class="row g-0">
+            <div class="col-md-12">
+              <img src="https://i.imgur.com/ahB7wn6.png" class="img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-12">
+            <img src="https://i.imgur.com/rwX3RtC.png" class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>   
+    <hr>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+{% include 'footer.html' %}
+{% endblock %}

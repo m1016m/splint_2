@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<body>
+    {% include 'header1.html' %}
+    <div class="container">
+        <div class="jumbotron mt-3">
+            <h1>會員註冊</h1>
+            <p class="lead">本教學平台註冊採用講師mail認證方式，註冊完後請利用下方按鈕認證</p>
+            <a class="btn btn-lg btn-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=rehand2024@gmail.com&cc=m1016m@gmail.com&su=我想申請成為平台會員&body=請協助申請" role="button" target="_blank">寄信給講師 &#187;</a>
+            <p>歡迎各位同學加入會員</p>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+{% endblock %}

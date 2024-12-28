@@ -1,0 +1,52 @@
+<header>
+    <div class='container'>    
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      
+      {% load static %}
+      <img src="{% static 'img/logo.png' %}" width='155'></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Index' %}">主頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Register' %}">註冊</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">登入</a>
+        </li>	
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Content' %}">教學文章</a>
+        </li>	
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Exercise' %}">手指運動教學</a>
+        </li>	
+        <li class="nav-item">
+          <a class="nav-link" href="#">聯絡我們</a>
+        </li>	
+      </ul>
+    
+    </div>
+  </nav>
+  
+    </div>
+  </header>
+<section id='intro'style="background: linear-gradient(45deg, rgb(128 127 67 / 90%), transparent) 20%, url(img/view.jpg) no-repeat center;background-size: cover;">
+<div class="jumbotron">
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <h1 class="display-4">職能治療的專長，副木設計與製作～</h1>
+        <p class="lead">副木製作是職能治療專業範圍之一,治療師透過繪製紙型,選擇熱塑性材料,繪製,加熱,裁剪材料,塑型,修整邊緣等步驟</p>
+        <p class="lead">根據每位患者個別化的需求,量身客製而成</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

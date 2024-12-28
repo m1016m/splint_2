@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% include 'header.html' %}
+<section id='second'>
+  <div class="container">
+    <div class='row'>
+    <div class='col-md-8 offset-md-2 text-center'>
+      <h3>加入學習平台，一起去認識副木</h3>
+      <div class='row'>
+        <div class='col-md-4 text-center'>
+          <img src="{% static 'img/france.jpg' %}">
+          <h5>搞手Danny</h5>
+        </div>
+        <div class='col-md-8 text-left'>
+          <p class='lead'>副木製作是職能治療重要的臨床業務之一！</p>
+          <p>副木製作是職能治療專業範圍之一,治療師透過繪製紙型,選擇熱塑性材料,繪製,加熱,裁剪材料,塑型,修整邊緣等步驟,根據每位患者個別化的需求,量身客製而成</p>
+          <p>本學習平台講授示範及指導動態副木的製作要點，適合生理職能治療的臨床工作者及醫師，尤其對平時較少有機會接觸動態副木製作的一般民眾是難得的學習機會！</p>
+        </div>
+      </div>
+    </div>
+  <div>
+  </div>
+  
+</section> 
+
+<section id='latest'>
+  
+  <div class="container">
+    <div class='row'>
+    <div class='col-md-12 text-center'>
+      <h3>副木教學</h3>
+      <div class='row'>
+        <div class='col-md-4 text-left'>
+          <div class='outer'>
+            <a href='#'>
+              <div class='upper'>
+              <img src="{% static 'img/h1.png' %}">
+              <div class='innertext'>
+              </div>
+              </div>
+              <div class='lower'>
+                <h3>上肢處理（副木篇） - </h3>
+                <span><i class="fas fa-map-marker-alt"></i> Test</span><br>
+                <span><i class="far fa-clock"></i> Nov 03, 2024 </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-md-4 text-left'>
+          <div class='outer'>
+            <a href='#'>
+              <div class='upper'>
+              <img src="{% static 'img/h1.png' %}">
+              <div class='innertext'>
+              </div>
+              </div>
+              <div class='lower'>
+                <h3>上肢處理（副木篇） - </h3>
+                <span><i class="fas fa-map-marker-alt"></i> Test</span><br>
+                <span><i class="far fa-clock"></i> Nov 03, 2024 </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-md-4 text-left'>
+          <div class='outer'>
+            <a href='#'>
+              <div class='upper'>
+              <img src="{% static 'img/h1.png' %}">
+              <div class='innertext'>
+              </div>
+              </div>
+              <div class='lower'>
+                <h3>上肢處理（副木篇） - </h3>
+                <span><i class="fas fa-map-marker-alt"></i> Test</span><br>
+                <span><i class="far fa-clock"></i> Nov 03, 2024 </span>
+              </div>
+            </a>
+          </div>
+        </div>
+</section>
+{% include 'footer.html' %}
+{% endblock %}
