@@ -7,3 +7,15 @@ class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = CustomUser
         fields = ('username', 'password1', 'password2', 'is_student', 'is_teacher')
+
+
+from .models import QuestionnaireResponse
+
+class QuestionnaireForm(forms.ModelForm):
+    class Meta:
+        model = QuestionnaireResponse
+        fields = '__all__'
+        widgets = {
+            'device_used': forms.CheckboxSelectMultiple,
+            'suggestions': forms.Textarea(attrs={'rows': 3}),
+        }

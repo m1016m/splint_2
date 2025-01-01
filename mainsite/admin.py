@@ -25,3 +25,12 @@ class CustomUserAdmin(UserAdmin):
     ordering = ('username',)
 
 admin.site.register(CustomUser, CustomUserAdmin)
+
+
+from .models import QuestionnaireResponse
+
+@admin.register(QuestionnaireResponse)
+class QuestionnaireResponseAdmin(admin.ModelAdmin):
+    list_display = ('id', 'gender', 'age_group', 'education', 'profession', 'usage_frequency', 'overall_experience')
+    search_fields = ('gender', 'age_group', 'profession')
+    list_filter = ('gender', 'age_group', 'usage_frequency')

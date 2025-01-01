@@ -68,3 +68,35 @@ def student_home(request):
 def teacher_home(request):
     return render(request, 'exercise.html')
 
+from django.shortcuts import render, redirect
+from django.core.mail import send_mail
+from .forms import QuestionnaireForm
+
+def questionnaire_view(request):
+    if request.method == 'POST':
+        form = QuestionnaireForm(request.POST)
+        if form.is_valid():
+            response = form.save()
+            # 發送郵件
+            send_mail(
+                subject="新的問卷提交",
+                message=f"問卷結果：\n{response}",
+                from_email="m1016m@gmail.com",
+                recipient_list=["m1016m@gmail.com"],
+                fail_silently=False,
+            )
+            return redirect('thank_you')
+    else:
+        form = QuestionnaireForm()
+    return render(request, 'form.html', {'form': form})
+
+def thank_you_view(request):
+    return render(request, 'thank_you.html')
+
+
+from django.contrib.auth import logout
+from django.shortcuts import redirect
+
+def custom_logout_view(request):
+    logout(request)
+    return redirect('/')
