@@ -24,6 +24,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mainsite import views
+from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='Index'),
@@ -33,6 +34,10 @@ urlpatterns = [
     path('login', views.login_view, name='login'),
     path('student_home', views.student_home, name='student_home'),
     path('teacher_home', views.teacher_home, name='teacher_home'),
+    path('questionnaire', views.questionnaire_view, name='questionnaire'),
+    path('thank-you/', views.thank_you_view, name='thank_you'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path('logout/', views.custom_logout_view, name='logout'),
 ]
 
 from django.conf.urls.static import static

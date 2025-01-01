@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+LOGOUT_REDIRECT_URL = '/'
 # myproject/settings.py
 AUTH_USER_MODEL = 'mainsite.CustomUser'
 # Application definition
