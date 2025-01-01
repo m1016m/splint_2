@@ -82,7 +82,7 @@ def questionnaire_view(request):
                 subject="新的問卷提交",
                 message=f"問卷結果：\n{response}",
                 from_email="m1016m@gmail.com",
-                recipient_list=["m1016m@gmail.com"],
+                recipient_list=["m1016m@gmail.com","rehand2024@gmail.com"],
                 fail_silently=False,
             )
             return redirect('thank_you')
